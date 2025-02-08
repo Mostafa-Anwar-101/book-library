@@ -120,11 +120,6 @@ document.addEventListener("DOMContentLoaded", displayBooks);
 document.getElementById("bookForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    if (books.length >= bookCount) {
-        alert("You have added the specified number of books.");
-        return;
-    }
-
     const bookName = document.getElementById("bookName").value;
     const bookPrice = document.getElementById("bookPrice").value;
     const authorName = document.getElementById("authorName").value;
